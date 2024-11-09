@@ -1,0 +1,56 @@
+
+.top-bar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .gov-logo {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.top-bar .session-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+.ima {
+    position: sticky;
+    right: 0;
+    margin-left: auto; 
+    width: 200px;
+    height: auto;
+}
+h1{
+    text-align: center;
+    
+    color: black;
+    font-family: Arial, sans-serif;
+  font-size: 25px
+    
+}
