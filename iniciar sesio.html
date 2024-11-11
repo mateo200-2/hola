@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="sesion.css">
+    <link rel="stylesheet" href="iniciar sesion.css">
+    <script src="mostrar_contraseña.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
 </head>
 <body>
     
-    <form action="va.php" method="post">
+    <form action="validasion.php" method="post">
         <h1>Iniciar Sesión</h1>
         <img src="ima/usuario.jpg" alt="Usuario" id="im"> <br><br>
 
         <input type="email" name="gmail" placeholder="Email" required> <br><br>
-        <input type="password" name="contraseña" placeholder="Password" required> <br><br>
-        <input type="submit" value="ingresar">
-        <button><a href="registro.html">Registrar</a></button> <br> <br>
-        <a id="il" href="olvidar.html">¿ olvidaste tu contraseña ?</a>
+        
+        <!-- Campo de contraseña con un botón de mostrar/ocultar -->
+        <input type="password" id="password" name="contraseña" placeholder="Password" required> 
+        <input type="checkbox" onclick="togglePassword()"> Mostrar contraseña
+        <br><br>
+        
+        <input type="submit" value="Ingresar">
+        <button><a href="registrar.html">Registrar</a></button> <br> <br>
+        <a id="il" href="olvidaste tu contraseña.html">¿Olvidaste tu contraseña?</a>
     </form>
+
+
     
 </body>
 </html>

@@ -47,6 +47,6 @@ $conn->close();
     <title>Document</title>
 </head>
 <body>
-    <button><a href="iniciar.html">volver al inicio</a></button>
+    <button><a href="iniciar sesio.html">volver al inicio</a></button>
 </body>
 </html>

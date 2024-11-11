@@ -17,8 +17,9 @@ if (isset($_POST["enviar"])) {
     $stmt->bind_param("ssss", $nombre, $email, $password, $telefono);
 
     if ($stmt->execute()) {
-        echo "Datos insertados correctamente.";
+        header("Location: contendo.html");
     } else {
+        
         echo "Error al insertar datos: " . $stmt->error;
     }
 
@@ -39,7 +40,7 @@ $conn->close();
 <body>
 
     
-    <button> <a href="iniciar.html">Volver</a></button>
+    <button> <a href="iniciar sesio.html">Volver</a></button>
     
 </body>
 </html>
