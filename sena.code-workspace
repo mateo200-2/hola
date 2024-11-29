@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../españa"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sena"
+	}
+}

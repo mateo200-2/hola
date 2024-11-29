@@ -13,11 +13,11 @@ if (isset($_POST["enviar"])) {
     $telefono = $_POST["telefono"];
 
     
-    $stmt = $conn->prepare("INSERT INTO cliente (nombre, email, contraseña, telefono) VALUES (?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO cliente (nombre, email,contraseña,telefono) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $nombre, $email, $password, $telefono);
 
     if ($stmt->execute()) {
-        header("Location: contendo.html");
+        header("Location: peliculas.html");
     } else {
         
         echo "Error al insertar datos: " . $stmt->error;
@@ -29,18 +29,16 @@ if (isset($_POST["enviar"])) {
 $conn->close();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sesion.css">
-    <title>Registro</title>
+    <title>Document</title>
 </head>
 <body>
 
-    
-    <button> <a href="iniciar sesio.html">Volver</a></button>
-    
+
 </body>
 </html>

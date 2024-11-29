@@ -1,0 +1,71 @@
+/* estilos.css */
+
+/* Reinicio de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo animado */
+body {
+    background: linear-gradient(90deg, #b0f068, #1aa38c, #5558f1);
+    background-size: 600% 600%;
+    animation: backgroundShift 15s ease infinite;
+}
+
+/* Animación de desplazamiento del fondo */
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.content {
+    color: white;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Efecto de estrellas cayendo */
+@keyframes fall {
+    from { transform: translateY(-100px); opacity: 1; }
+    to { transform: translateY(100vh); opacity: 0; }
+}
+
+.star {
+    position: absolute;
+    top: -50px;
+    width: 2px;
+    height: 80px;
+    background: white;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+/* Círculo de colores que sigue al cursor */
+.cursor-effect {
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 70%;
+    background: radial-gradient(circle,rgba(235, 224, 224, 0.904),rgb(245, 245, 247));
+    pointer-events: none;
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+}

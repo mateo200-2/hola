@@ -18,7 +18,7 @@ if (isset($_POST["gmail"]) && isset($_POST["contraseña"])) {
 
     if ($result->num_rows > 0) {
         
-        header("Location: contendo.html");
+        header("Location: peliculas.html");
         exit();
     } else {
         echo "<p style='color: red;'>Correo o contraseña incorrectos. Inténtalo de nuevo.</p>";

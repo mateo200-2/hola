@@ -23,9 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("ss", $nueva_contrasena, $email);
 
         if ($stmt->execute()) {
-            echo "Contraseña actualizada correctamente";
-        } else {
-            echo "Error al actualizar la contraseña: " . $stmt->error . "";
+            header("Location: peliculas.html");
+                } else {
+            print("<espan> hola</espan> ". $stmt->error . ""); 
+            
         }
     } else {
         echo "Correo o contraseña actual incorrectos";
@@ -38,15 +39,3 @@ $conn->close();
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="sesion.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button><a href="iniciar sesio.html">volver al inicio</a></button>
-</body>
-</html>
