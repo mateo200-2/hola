@@ -1,0 +1,100 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.factura {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.factura p {
+    margin: 10px 0;
+}
+
+button, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+    background-color: #0056b3;
+}
+
+button a, .btn a {
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ddd;
+}
+
+form input[type="number"],
+form select {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(40, 167, 69, 0.3);
+    background-color: #218838;
+}

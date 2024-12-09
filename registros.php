@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "mateo");
+$conn = new mysqli("localhost", "root", "", "produc");
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
@@ -13,11 +13,12 @@ if (isset($_POST["enviar"])) {
     $telefono = $_POST["telefono"];
 
     
-    $stmt = $conn->prepare("INSERT INTO cliente (nombre, email,contraseña,telefono) VALUES (?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO usuarios (nombre, email,contraseña,telefono) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $nombre, $email, $password, $telefono);
 
     if ($stmt->execute()) {
-        header("Location: peliculas.html");
+        header("location:peliculas.html");
+        
     } else {
         
         echo "Error al insertar datos: " . $stmt->error;

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e2f; /* Fondo oscuro */
+    background-color: #1e1e2f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,6 @@ body {
 }
 
 form {
-    background-color: #2a2a3b; /* Fondo del formulario más oscuro */
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
@@ -19,7 +18,7 @@ form {
 }
 
 h1 {
-    color: #c9d1d9; /* Texto más claro */
+    color: #c9d1d9; 
     margin-bottom: 20px;
 }
 
@@ -27,10 +26,10 @@ h1 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #007bff; /* Borde para destacar la imagen */
+    border: 3px solid #007bff; 
 }
 
-/* Estilos para los campos de entrada */
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -39,7 +38,7 @@ input[type="password"] {
     padding: 12px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Borde inicial tenue */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     background-color: transparent;
     font-size: 16px;
@@ -47,7 +46,7 @@ input[type="password"] {
     position: relative;
 }
 
-/* Color del texto de los placeholders */
+
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="number"]::placeholder,
@@ -55,10 +54,10 @@ input[type="password"]::placeholder {
     color: #6c757d;
 }
 
-/* Efecto de borde animado */
+
 .input-border {
     position: absolute;
-    background: #007bff; /* Color del borde animado */
+    background: #007bff;
     width: 0;
     height: 2px;
     bottom: 0;
@@ -71,7 +70,7 @@ input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus {
     outline: none;
-    background-color: #333344; /* Fondo tenue en el foco */
+    background-color: #333344; 
     color: #ffffff;
 }
 
@@ -82,15 +81,14 @@ input[type="password"]:focus ~ .input-border {
     width: 100%;
 }
 
-/* Efecto hover en el campo de entrada */
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="number"]:hover,
 input[type="password"]:hover {
-    background-color: #292b3f; /* Fondo oscuro en hover */
+    background-color: #292b3f; 
 }
 
-/* Botones */
+
 input[type="submit"],
 input[type="reset"] {
     width: 48%;
@@ -102,7 +100,7 @@ input[type="reset"] {
     color: white;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s; /* Efecto de transición */
+    transition: background-color 0.3s; 
 }
 
 input[type="reset"] {
@@ -110,14 +108,14 @@ input[type="reset"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3; /* Color más oscuro en hover */
+    background-color: #0056b3; 
 }
 
 input[type="reset"]:hover {
     background-color: #c82333;
 }
 
-/* Botón adicional */
+
 button {
     width: 48%;
     padding: 10px;
@@ -144,7 +142,7 @@ button a:hover {
     color: white;
 }
 
-/* Colores adicionales */
+
 #il {
     color: #0d6efd;
 }

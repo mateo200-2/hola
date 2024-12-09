@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "mateo");
+$conn = new mysqli("localhost", "root", "", "produc");
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
@@ -11,7 +11,7 @@ if (isset($_POST["gmail"]) && isset($_POST["contraseña"])) {
     $password = $_POST["contraseña"];
 
    
-    $stmt = $conn->prepare("SELECT * FROM cliente WHERE email = ? AND contraseña = ?");
+    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email = ? AND contraseña = ?");
     $stmt->bind_param("ss", $email, $password);
     $stmt->execute();
     $result = $stmt->get_result();
