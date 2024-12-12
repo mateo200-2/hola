@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
         
         if ($usuariomodelo->actualizar($id, $nuevoNombre, $nuevoEmail, $nuevoTelefono)) {
             echo "Usuario actualizado";
-            header("location:mostrar usuarios.php ");
+            header("location:mostrar usuarios.php");
         } else {
             echo "Error al actualizar usuario";
         }
@@ -24,7 +24,6 @@ if (isset($_GET['id'])) {
 }
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="es">
@@ -38,19 +37,19 @@ if (isset($_GET['id'])) {
     <?php if (isset($usuario)): ?>
         <div>
         <form method="POST" action="">
-            <label for="">Nombre</label>
-            <input type="text" id="nombre" name="nombre" value=" <?php echo htmlspecialchars ($usuario['nombre']); ?>">
+            <h1>Editar Usuario</h1>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="<?php echo htmlspecialchars($usuario['nombre']); ?>" required>
             
-            <label for="">Email</label>
-            <input type="email" id="email" name="email" value=" <?php echo htmlspecialchars ($usuario['email']); ?>" >
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($usuario['email']); ?>" required>
             
-            <label for="">Telefono</label>
-            <input type="text" id="telefono" name="telefono" value=" <?php echo htmlspecialchars ($usuario['telefono']); ?>" >
-            
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" value="<?php echo htmlspecialchars($usuario['telefono']); ?>" required>
             
             <button type="submit">Actualizar</button>
-            </div>
         </form>
+    </div>
     <?php else: ?>
         <p>Usuario no encontrado.</p>
     <?php endif; ?>

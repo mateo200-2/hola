@@ -1,7 +1,5 @@
 <?php
 
-print_r($_POST);
-
 require_once "usuariomodelo.php";
 
 $usuario = new Usuariomodelo();
@@ -13,13 +11,13 @@ $productos = $usuario->produtos();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="esti.css">
+    <link rel="stylesheet" href="usu.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostrar Datos</title>
 </head>
 <body>
     <h1>Mostrar Productos</h1>
-    <a href="agregarpro.php"><button>Agregar</button></a>
+    <a href="agregarpro.php"><button>AGREGAR</button></a>
     <div class="cards-container">
         <?php foreach ($productos as $producto): ?>
             <div class="card">
@@ -31,7 +29,7 @@ $productos = $usuario->produtos();
                 <p><strong>Categoría:</strong> <?php echo htmlspecialchars($producto['categoria']); ?></p>
                 <div class="card-actions">
                     <a href='eliminarpro.php?id=<?php echo $producto["id"]; ?>' class='btn btn-delete'>Eliminar</a>
-                    <a href='editar.php?id=<?php echo $producto["id"]; ?>' class='btn btn-edit'>Editar</a>
+                    <a href='editarpro.php' class='btn btn-edit'>Editar</a>
                     <a href='comprar.php?id=<?php echo $producto["id"]; ?>' class='btn btn-buy'>Comprar</a>
                 </div>
             </div>

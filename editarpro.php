@@ -23,7 +23,6 @@ if (isset($_GET['id'])) {
         }
     }
 } else {
-    echo "ID de usuario no especificado";
 }
 
 ?>
@@ -62,6 +61,7 @@ if (isset($_GET['id'])) {
         </form>
     <?php else: ?>
         <p>Usuario no encontrado.</p>
+        
     <?php endif; ?>
 </body>
 </html>

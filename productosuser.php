@@ -34,7 +34,7 @@ class Usuariomodelo {
         return $result->num_rows > 0;
     }
     public function obtenerusuarioporId($id) {
-        $query = "SELECT id, nombre,descripcion, precio,cantidad,categoria FROM productos WHERE id = ?";
+        $query = "SELECT  nombre,descripcion, precio,cantidad,categoria FROM productos WHERE id = ?";
         $stmt = $this->conn->prepare($query); 
         $stmt->bind_param("i", $id);  
         $stmt->execute();
